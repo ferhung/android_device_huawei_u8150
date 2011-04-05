@@ -1,11 +1,10 @@
 #!/bin/sh
 
-# Extract prebuilt libraries that are needed for the U8150
-
 mkdir -p ../../../vendor/huawei/ideos/proprietary
 
 DIRS="
 bin
+wifi
 lib/hw
 "
 
@@ -21,10 +20,14 @@ bin/oem_rpc_svc
 bin/qmuxd
 bin/rild
 
+lib/hw/copybit.msm7k.so
+lib/hw/gralloc.msm7k.so
 lib/hw/lights.msm7k.so
 lib/hw/sensors.default.so
 
 lib/libaudioeq.so
+lib/libcameraservice.so
+lib/libcamera.so
 lib/libcm.so
 lib/libdiag.so
 lib/libdll.so
@@ -42,16 +45,24 @@ lib/libnv.so
 lib/liboem_rapi.so
 lib/libOmxH264Dec.so
 lib/libOmxMpeg4Dec.so
+lib/libomx_sharedlibrary_qc.so
 lib/libOmxVidEnc.so
 lib/libOmxWmvDec.so
 lib/liboncrpc.so
 lib/libpbmlib.so
+lib/libqcamera.so
 lib/libqmi.so
 lib/libqueue.so
 lib/libril-qc-1.so
 lib/libril-qcril-hook-oem.so
+lib/libril.so
+lib/librs_jni.so
+lib/libRS.so
 lib/libwms.so
 lib/libwmsts.so
+
+wifi/firmware.bin
+wifi/nvram.txt
 "
 
 for FILE in $FILES; do
