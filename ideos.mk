@@ -144,6 +144,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/huawei/ideos/include/AudioFilter.csv:system/etc/AudioFilter.csv \
     device/huawei/ideos/include/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
+    device/huawei/ideos/include/sysctl.conf:system/etc/sysctl.conf \
     device/huawei/ideos/prebuilt/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
     vendor/huawei/ideos/proprietary/bin/akmd2:system/bin/akmd2 \
     vendor/huawei/ideos/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
