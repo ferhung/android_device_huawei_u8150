@@ -58,7 +58,7 @@ PRODUCT_COPY_FILES += \
 
 # Init files
 PRODUCT_COPY_FILES += \
-    device/huawei/ideos/prebuilt/init.huawei.rc:root/init.huawei.rc
+    device/huawei/ideos/init.ideos.rc:root/init.ideos.rc
 
 # OEM logo
 PRODUCT_COPY_FILES += \
@@ -95,21 +95,16 @@ PRODUCT_COPY_FILES += \
 
 # Other modules
 PRODUCT_COPY_FILES += \
-    vendor/huawei/ideos/proprietary/lib/hw/copybit.msm7k.so:system/lib/hw/copybit.msm7k.so \
-    vendor/huawei/ideos/proprietary/lib/hw/gralloc.msm7k.so:system/lib/hw/gralloc.msm7k.so \
-    vendor/huawei/ideos/proprietary/lib/hw/lights.msm7k.so:system/lib/hw/lights.msm7k.so \
-    vendor/huawei/ideos/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
+    vendor/huawei/ideos/proprietary/lib/hw/copybit.msm7k.so:system/lib/hw/copybit.ideos.so \
+    vendor/huawei/ideos/proprietary/lib/hw/gralloc.msm7k.so:system/lib/hw/gralloc.ideos.so \
+    vendor/huawei/ideos/proprietary/lib/hw/lights.msm7k.so:system/lib/hw/lights.ideos.so \
+    vendor/huawei/ideos/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.ideos.so
 
 # Wi-Fi
 PRODUCT_COPY_FILES += \
     device/huawei/ideos/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4329.bin \
     device/huawei/ideos/firmware/nvram.txt:system/etc/firmware/nvram.txt \
     device/huawei/ideos/prebuilt/bcm4329.ko:system/lib/modules/bcm4329.ko
-
-# Generated kcm keymaps
-PRODUCT_PACKAGES := \
-	melfas-touch-keypad.kcm \
-	surf_keypad.kcm
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
