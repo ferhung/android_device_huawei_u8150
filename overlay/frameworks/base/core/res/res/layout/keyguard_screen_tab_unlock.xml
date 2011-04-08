@@ -122,7 +122,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/date"
-            android:layout_marginTop="4dip"
+            android:layout_marginTop="3dip"
             android:layout_marginLeft="24dip"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:drawablePadding="4dip"
@@ -133,7 +133,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/status1"
-            android:layout_marginTop="4dip"
+            android:layout_marginTop="3dip"
             android:layout_marginLeft="24dip"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:drawablePadding="4dip"
@@ -167,7 +167,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="125dip"
+            android:layout_marginBottom="127dip"
             />
 
         <com.android.internal.widget.SlidingTab
@@ -176,7 +176,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="40dip"
+            android:layout_marginBottom="42dip"
             />
 
         <com.android.internal.widget.RotarySelector
@@ -212,7 +212,7 @@
             android:layout_centerInParent="true"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="0dip"
-            android:padding="10px"
+            android:padding="8px"
             android:background="@color/transparent"
             android:visibility="gone"
             />
@@ -224,7 +224,7 @@
             android:layout_centerInParent="true"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="0dip"
-            android:padding="10px"
+            android:padding="8px"
             android:background="@color/transparent"
             android:visibility="gone"
             />
@@ -235,7 +235,7 @@
             android:src="@drawable/ic_media_previous"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="0dip"
-            android:padding="10px"
+            android:padding="8px"
             android:layout_toLeftOf="@+id/musicControlPause"
             android:background="@color/transparent"
             android:visibility="gone"
@@ -247,7 +247,7 @@
             android:src="@drawable/ic_media_next"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="0dip"
-            android:padding="10px"
+            android:padding="8px"
             android:layout_toRightOf="@+id/musicControlPause"
             android:background="@color/transparent"
             android:visibility="gone"
