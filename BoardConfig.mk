@@ -16,7 +16,7 @@
 # WARNING: This line must come *before* including the proprietary
 # variant, so that it gets overwritten by the parent (which goes
 # against the traditional rules of inheritance).
-USE_CAMERA_STUB := false
+USE_CAMERA_STUB := true
 
 # Inherit from the proprietary version
 -include vendor/huawei/ideos/BoardConfigVendor.mk
@@ -42,6 +42,8 @@ BOARD_HAVE_BLUETOOTH := true
 
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/huawei/ideos/recovery_ui.c
 BOARD_LDPI_RECOVERY := true
+
+TARGET_PREBUILT_KERNEL := device/huawei/ideos/prebuilt/kernel
 
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_KERNEL_CMDLINE := mem=211M console=ttyMSM2,115200n8 androidboot.hardware=ideos
