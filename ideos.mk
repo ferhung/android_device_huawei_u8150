@@ -102,9 +102,9 @@ PRODUCT_COPY_FILES += \
 
 # Wi-Fi
 PRODUCT_COPY_FILES += \
-    device/huawei/ideos/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4329.bin \
+    device/huawei/ideos/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4319.bin \
     device/huawei/ideos/firmware/nvram.txt:system/etc/firmware/nvram.txt \
-    device/huawei/ideos/prebuilt/bcm4329.ko:system/lib/modules/bcm4329.ko
+    device/huawei/ideos/prebuilt/bcm4329.ko:system/lib/modules/bcm4319.ko
 
 # GPS
 PRODUCT_COPY_FILES += \
