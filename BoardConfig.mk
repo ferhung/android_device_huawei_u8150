@@ -43,6 +43,8 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/huawei/ideos/recovery_ui.c
 BOARD_LDPI_RECOVERY := true
 
+BOARD_GPS_LIBRARIES := libloc_api
+
 TARGET_PREBUILT_KERNEL := device/huawei/ideos/prebuilt/kernel
 
 BOARD_KERNEL_BASE := 0x00200000

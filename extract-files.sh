@@ -28,6 +28,7 @@ lib/libaudioeq.so
 lib/libcameraservice.so
 lib/libcamera.so
 lib/libcm.so
+lib/libcommondefs.so
 lib/libdiag.so
 lib/libdll.so
 lib/libdsm.so
@@ -35,6 +36,8 @@ lib/libdss.so
 lib/libgsdi_exp.so
 lib/libgstk_exp.so
 lib/libhwrpc.so
+lib/libloc_api-rpc.so
+lib/libloc_api.so
 lib/libmm-adspsvc.so
 lib/libmmgsdilib.so
 lib/libmmipl.so

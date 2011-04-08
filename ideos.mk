@@ -106,6 +106,12 @@ PRODUCT_COPY_FILES += \
     device/huawei/ideos/firmware/nvram.txt:system/etc/firmware/nvram.txt \
     device/huawei/ideos/prebuilt/bcm4329.ko:system/lib/modules/bcm4329.ko
 
+# GPS
+PRODUCT_COPY_FILES += \
+    vendor/huawei/ideos/proprietary/lib/libcommondefs.so:system/lib/libcommondef.so \
+    vendor/huawei/ideos/proprietary/lib/libloc_api-rpc.so:system/lib/libloc_api-rpc.so \
+    vendor/huawei/ideos/proprietary/lib/libloc_api.so:system/lib/libloc_api.so
+
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
     device/huawei/ideos/melfas-touch-keypad.kl:system/usr/keylayout/melfas-touch-keypad.kl \
