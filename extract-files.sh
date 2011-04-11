@@ -57,7 +57,7 @@ lib/libqmi.so
 lib/libqueue.so
 lib/libril-qc-1.so
 lib/libril-qcril-hook-oem.so
-lib/libril.so
+lib/libRS.so
 lib/libwms.so
 lib/libwmsts.so
 "

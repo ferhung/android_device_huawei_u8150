@@ -89,7 +89,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/ideos/proprietary/lib/libqueue.so:system/lib/libqueue.so \
     vendor/huawei/ideos/proprietary/lib/libril-qc-1.so:system/lib/libril-qc-1.so \
     vendor/huawei/ideos/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
-    vendor/huawei/ideos/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/huawei/ideos/proprietary/lib/libwms.so:system/lib/libwms.so \
     vendor/huawei/ideos/proprietary/lib/libwmsts.so:system/lib/libwmsts.so
 
@@ -102,9 +101,9 @@ PRODUCT_COPY_FILES += \
 
 # Wi-Fi
 PRODUCT_COPY_FILES += \
-    device/huawei/ideos/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4319.bin \
+    device/huawei/ideos/firmware/fw_bcm4319.bin:system/etc/firmware/fw_bcm4319.bin \
     device/huawei/ideos/firmware/nvram.txt:system/etc/firmware/nvram.txt \
-    device/huawei/ideos/prebuilt/bcm4329.ko:system/lib/modules/bcm4319.ko
+    device/huawei/ideos/prebuilt/bcm4319.ko:system/lib/modules/bcm4319.ko
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -135,7 +134,6 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_COPY_FILES += \
-    vendor/huawei/ideos/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
     vendor/huawei/ideos/proprietary/lib/libcamera.so:system/lib/libcamera.so \
     vendor/huawei/ideos/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
     vendor/huawei/ideos/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
@@ -151,6 +149,10 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/ideos/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/huawei/ideos/proprietary/lib/libaudioeq.so:system/lib/libaudioeq.so \
     vendor/huawei/ideos/proprietary/lib/libmmprocess.so:system/lib/libmmprocess.so
+
+# Dead ends (clean this up)
+PRODUCT_COPY_FILES += \
+    vendor/huawei/ideos/proprietary/lib/libRS.so:system/lib/libRS.so
     
 # Inherit from the proprietary version
 $(call inherit-product-if-exists, vendor/huawei/ideos/ideos-vendor.mk)
