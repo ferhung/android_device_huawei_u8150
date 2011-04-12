@@ -94,10 +94,10 @@ PRODUCT_COPY_FILES += \
 
 # Other modules
 PRODUCT_COPY_FILES += \
-    vendor/huawei/ideos/proprietary/lib/hw/copybit.msm7k.so:system/lib/hw/copybit.ideos.so \
-    vendor/huawei/ideos/proprietary/lib/hw/gralloc.msm7k.so:system/lib/hw/gralloc.ideos.so \
-    vendor/huawei/ideos/proprietary/lib/hw/lights.msm7k.so:system/lib/hw/lights.ideos.so \
-    vendor/huawei/ideos/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.ideos.so
+    vendor/huawei/ideos/proprietary/lib/hw/copybit.msm7k.so:system/lib/hw/copybit.msm7k.so \
+    vendor/huawei/ideos/proprietary/lib/hw/gralloc.msm7k.so:system/lib/hw/gralloc.msm7k.so \
+    vendor/huawei/ideos/proprietary/lib/hw/lights.msm7k.so:system/lib/hw/lights.msm7k.so \
+    vendor/huawei/ideos/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.msm7k.so
 
 # Wi-Fi
 PRODUCT_COPY_FILES += \
