@@ -155,6 +155,9 @@ $(call inherit-product-if-exists, vendor/huawei/ideos/ideos-vendor.mk)
 
 $(call inherit-product, build/target/product/full.mk)
 
+# Include all locales that have translations.
+$(call inherit-product, build/target/product/languages_full.mk)
+
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 PRODUCT_NAME := full_ideos
