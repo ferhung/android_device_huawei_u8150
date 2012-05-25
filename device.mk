@@ -91,7 +91,8 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/huawei/u8150/prebuilt/etc/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt
+    device/huawei/u8150/prebuilt/etc/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
+    device/huawei/u8150/prebuilt/etc/AudioFilter.csv:system/etc/AudioFilter.csv
 
 # Bluetooth configuration files
 PRODUCT_COPY_FILES += \
