@@ -30,9 +30,9 @@
 #define NO_ERROR 0
 //#define LOGV LOGI
 #define GRALLOC_USAGE_PMEM_PRIVATE_ADSP GRALLOC_USAGE_PRIVATE_0
-#define MSM_COPY_HW 1
+#define MSM_COPY_HW 0
 #define HWA 0
-#ifdef HWA
+#if HWA
 #include "qcom/display/libgralloc/gralloc_priv.h"
 #else
 #include "libhardware/modules/gralloc/gralloc_priv.h"
@@ -134,7 +134,7 @@ CameraHAL_CopyBuffers_Hw(int srcFd, int destFd,
     bool   success = true;
     int    fb_fd = open("/dev/graphics/fb0", O_RDWR);
     
-#ifndef MSM_COPY_HW
+#if !MSM_COPY_HW
     return false;
 #endif
 
@@ -248,7 +248,7 @@ CameraHAL_HandlePreviewData(const android::sp<android::IMemory>& dataPtr,
       ssize_t  offset;
       size_t   size;
       int32_t  previewFormat = MDP_Y_CBCR_H2V2;
-#ifdef HWA
+#if HWA
       int32_t  destFormat    = MDP_RGBX_8888;
 #else
       int32_t  destFormat    = MDP_RGBA_8888;
@@ -263,14 +263,14 @@ CameraHAL_HandlePreviewData(const android::sp<android::IMemory>& dataPtr,
            (unsigned)offset, size, mHeap != NULL ? mHeap->base() : 0);
 
       mWindow->set_usage(mWindow,
-#ifndef HWA
+#if !HWA
                          GRALLOC_USAGE_PMEM_PRIVATE_ADSP |
 #endif
                          GRALLOC_USAGE_SW_READ_OFTEN);
 
       retVal = mWindow->set_buffers_geometry(mWindow,
                                              previewWidth, previewHeight, 
-#ifdef HWA
+#if HWA
                                              HAL_PIXEL_FORMAT_RGBX_8888
 #else
                                              HAL_PIXEL_FORMAT_RGBA_8888
