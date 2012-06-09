@@ -33,4 +33,12 @@ PRODUCT_VERSION_DEVICE_SPECIFIC :=
 
 TARGET_BOOTANIMATION_NAME := vertical-240x320
 
+ifdef I_AM_TILAL
+PRODUCT_PROPERTY_OVERRIDES += \
+   ro.goo.board=u8150 \
+   ro.goo.developerid=tilal6991 \
+   ro.goo.version=$(shell date +%Y%m%d) \
+   ro.goo.rom=cfxu8150
+endif
+
 TARGET_NO_LIVEWALLPAPERS := true
