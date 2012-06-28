@@ -14,12 +14,15 @@
 
 DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 
+# Extra LDPI overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/ldpi/overlay
+
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := huawei_u8150
 PRODUCT_DEVICE := u8150
 PRODUCT_MODEL := U8150
 
-PRODUCT_AAPT_CONFIG := mdpi hdpi
+PRODUCT_AAPT_CONFIG := mdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 PRODUCT_LOCALES += mdpi
 
