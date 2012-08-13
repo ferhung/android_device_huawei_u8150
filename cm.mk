@@ -20,7 +20,7 @@ $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
 # Setup device configuration
-PRODUCT_NAME := cm_u8150
+PRODUCT_NAME := cfx_u8150
 PRODUCT_RELEASE_NAME := u8150
 PRODUCT_DEVICE := u8150
 PRODUCT_BRAND := Huawei
@@ -38,7 +38,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
    ro.goo.board=u8150 \
    ro.goo.developerid=tilal6991 \
    ro.goo.version=$(shell date +%Y%m%d) \
-   ro.goo.rom=cfxu8150
+   ro.goo.rom=cfx2u8150
 endif
-
-TARGET_NO_LIVEWALLPAPERS := true
