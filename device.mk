@@ -28,9 +28,9 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 PRODUCT_LOCALES += mdpi
 
 # Graphics 
-PRODUCT_PACKAGES += \
-    gralloc.u8150 \
-    copybit.u8150
+#PRODUCT_PACKAGES += \
+#    gralloc.u8150 \
+#    copybit.u8150
 
 # Audio
 PRODUCT_PACKAGES += \
