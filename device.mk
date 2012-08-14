@@ -75,7 +75,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/huawei/u8150/prebuilt/etc/vold.fstab:system/etc/vold.fstab \
     device/huawei/u8150/prebuilt/etc/start_usb0.sh:system/etc/start_usb0.sh \
-    device/huawei/u8150/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml
+    device/huawei/u8150/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    device/huawei/u8150/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    device/huawei/u8150/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf
 
 # Init files
 PRODUCT_COPY_FILES += \
