@@ -57,6 +57,14 @@ on boot
 # Temporary hack to prevent framebuffer flicker
     chmod 0777 /sys/class/graphics/fb0/state
     write /sys/class/graphics/fb0/state 1
+    chmod 0777 /dev/accel
+    chmod 0777 /dev/graphics/fb0
+    chmod 0777 /dev/akm8973_aot
+    chmod 0777 /dev/akm8973_dev
+    chmod 0660 /dev/i2c-0
+    chmod 0660 /dev/i2c-1
+    chmod 0640 /dev/light
+    chmod 0640 /dev/proximity
 
 service qmuxd /system/bin/qmuxd
     class main
