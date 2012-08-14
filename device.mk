@@ -28,8 +28,8 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 PRODUCT_LOCALES += mdpi
 
 # Graphics 
-#PRODUCT_PACKAGES += \
-#    gralloc.u8150 \
+PRODUCT_PACKAGES += \
+    gralloc.u8150
 #    copybit.u8150
 
 # Audio
@@ -81,6 +81,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/huawei/u8150/prebuilt/init.u8150.usb.rc:root/init.u8150.usb.rc \
     device/huawei/u8150/prebuilt/init.u8150.rc:root/init.u8150.rc \
+    device/huawei/u8150/prebuilt/initlogo.rle:root/initlogo.rle
     device/huawei/u8150/prebuilt/ueventd.u8150.rc:root/ueventd.u8150.rc
 
 # Wi-Fi releated
