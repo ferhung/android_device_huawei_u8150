@@ -12,12 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit device configuration
-$(call inherit-product, $(LOCAL_PATH)/u8150.mk)
+# Inherit from u8150 device
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
+$(call inherit-product, vendor/huawei/u8150/u8150-vendor.mk)
+
+# The gps config appropriate for this device
+$(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 $(call inherit-product, vendor/cm/config/gsm.mk)
+
+# Boot animation
+TARGET_BOOTANIMATION_NAME := vertical-240x320
 
 # Setup device configuration
 PRODUCT_NAME := cfx_u8150
@@ -27,11 +34,6 @@ PRODUCT_BRAND := Huawei
 PRODUCT_MODEL := U8150
 PRODUCT_MANUFACTURER := Huawei
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=google/soju/crespo:4.0.4/IMM76D/299849:user/release-keys PRIVATE_BUILD_DESC="soju-user 4.0.4 IMM76D 299849 release-keys"
-
-# Release name and versioning
-PRODUCT_VERSION_DEVICE_SPECIFIC :=
-
-TARGET_BOOTANIMATION_NAME := vertical-240x320
 
 ifdef I_AM_TILAL
 PRODUCT_PROPERTY_OVERRIDES += \
