@@ -81,7 +81,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/huawei/u8150/prebuilt/init.u8150.usb.rc:root/init.u8150.usb.rc \
     device/huawei/u8150/prebuilt/init.u8150.rc:root/init.u8150.rc \
-    device/huawei/u8150/prebuilt/initlogo.rle:root/initlogo.rle
+    device/huawei/u8150/prebuilt/initlogo.rle:root/initlogo.rle \
     device/huawei/u8150/prebuilt/ueventd.u8150.rc:root/ueventd.u8150.rc
 
 # Wi-Fi releated
