@@ -58,6 +58,9 @@ PRODUCT_PACKAGES += \
     camera.u8150 \
     Apollo
 
+PRODUCT_COPY_FILES += \
+        device/common/gps/gps.conf_EU_SUPL:system/etc/gps.conf
+
 # Hardware permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml \
