@@ -13,16 +13,9 @@
 # limitations under the License.
 
 # Inherit from u8150 device
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
+$(call inherit-product, $(LOCAL_PATH)/u8150.mk)
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
-
-# The gps config appropriate for this device
-$(call inherit-product, device/common/gps/gps_eu_supl.mk)
-
-# Inherit some common CM stuff.
+# Inherit some common CM stuff
 $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 $(call inherit-product, vendor/cm/config/gsm.mk)
 

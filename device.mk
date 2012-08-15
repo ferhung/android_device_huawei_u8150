@@ -52,6 +52,7 @@ PRODUCT_PACKAGES += \
 
 # Other
 PRODUCT_PACKAGES += \
+    audio.usb.default \
     lights.u8150 \
     gps.u8150 \
     camera.u8150 \
