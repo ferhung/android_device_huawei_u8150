@@ -48,6 +48,10 @@ pid_t gettid() { return syscall(__NR_gettid);}
 #undef __KERNEL__
 #endif
 
+enum {
+    GRALLOC_MODULE_PERFORM_CREATE_HANDLE_FROM_BUFFER = 0x080000001,
+};
+
 /*****************************************************************************/
 
 static int gralloc_map(gralloc_module_t const* module,

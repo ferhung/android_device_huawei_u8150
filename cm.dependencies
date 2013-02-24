@@ -1,0 +1,11 @@
+[
+ {
+   "repository": "android_kernel_huawei_msm7x25",
+   "target_path": "kernel/huawei/msm7x25",
+   "branch": "cm-10.1"
+ }, {
+   "repository": "proprietary_vendor_huawei",
+   "target_path": "vendor/huawei",
+   "branch": "cm-10.1"
+ }
+]
