@@ -1,10 +1,11 @@
 # Inherit from u8150 device
 $(call inherit-product, $(LOCAL_PATH)/u8150.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/gsm.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/tiny.mk)
 
 # Inherit some common CM stuff.
+$(call inherit-product, vendor/cm/config/gsm.mk)
 $(call inherit-product, vendor/cm/config/tiny.mk)
 
 # Correct bootanimation size for the screen
