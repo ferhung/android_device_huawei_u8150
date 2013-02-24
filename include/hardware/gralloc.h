@@ -79,6 +79,9 @@ enum {
     /* mask for the software usage bit-mask */
     GRALLOC_USAGE_HW_MASK               = 0x00011F00,
 
+    /* mask for the camera access values */
+    GRALLOC_USAGE_HW_CAMERA_MASK        = 0x00060000,
+
     /* buffer should be displayed full-screen on an external display when
      * possible
      */
